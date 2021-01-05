@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF.VymenaHrace"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="VymenaHrace" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="listHracu" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="180" SelectionChanged="listHracu_SelectionChanged"/>
+        <Label Content="Vyberte ze seznamu hráče, kterého chcete vyměnit za hráče zvoleného v předchozím kroku" HorizontalAlignment="Left" Margin="223,21,0,0" VerticalAlignment="Top"/>
+        <Button Content="Dokončit výměnu" HorizontalAlignment="Left" Margin="354,193,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
+
+    </Grid>
+</Window>

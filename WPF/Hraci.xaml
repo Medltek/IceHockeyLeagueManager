@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF.Hraci"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Hraci" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="499*"/>
+            <ColumnDefinition Width="295*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Vyhledat Hráče" HorizontalAlignment="Left" Margin="23,23,0,0" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="hrac_jmeno_hledat" HorizontalAlignment="Left" Height="23" Margin="158,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Button x:Name="vyhledat" Content="Vyhledat" HorizontalAlignment="Left" Margin="302,29,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="buttOcenit" Content="Ocenit" HorizontalAlignment="Left" Margin="219,95,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Label Content="Ocenit nejmladší hráče ligy" HorizontalAlignment="Left" Margin="23,92,0,0" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="hrac_vaha" HorizontalAlignment="Left" Height="23" Margin="198,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="hrac_vyska" HorizontalAlignment="Left" Height="23" Margin="198,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="hrac_cena" HorizontalAlignment="Left" Height="23" Margin="124.6,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="hrac_post" HorizontalAlignment="Left" Height="23" Margin="124.6,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="hrac_jmeno" HorizontalAlignment="Left" Height="23" Margin="198,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="hrac_zahyb" HorizontalAlignment="Left" Height="23" Margin="124.6,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label Content=" Jméno a příjmení" HorizontalAlignment="Left" Margin="25,185,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Výška" HorizontalAlignment="Left" Margin="25,230,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Váha" HorizontalAlignment="Left" Margin="25,281,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Záhyb" HorizontalAlignment="Left" Margin="484,188,0,0" VerticalAlignment="Top" Width="122" Grid.ColumnSpan="2"/>
+        <Label Content="Post" HorizontalAlignment="Left" Margin="484,236,0,0" VerticalAlignment="Top" Width="122" Grid.ColumnSpan="2"/>
+        <Label Content="Cena" HorizontalAlignment="Left" Margin="484,281,0,0" VerticalAlignment="Top" Width="122" Grid.ColumnSpan="2"/>
+        <Label Content="Vložení nového hráče" HorizontalAlignment="Left" Margin="331,157,0,0" VerticalAlignment="Top" Width="172" Grid.ColumnSpan="2"/>
+        <DatePicker x:Name="hrac_datum_narozeni" HorizontalAlignment="Left" Margin="124.6,334,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Datum narození" HorizontalAlignment="Left" Margin="484,333,0,0" VerticalAlignment="Top" Width="122" Grid.ColumnSpan="2"/>
+        <Button x:Name="buttVlozit" Content="Vložit hráče" HorizontalAlignment="Left" Margin="359,466,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Label Content="Tym" HorizontalAlignment="Left" Margin="25,333,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox x:Name="listTymu" HorizontalAlignment="Left" Height="120" Margin="198,334,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="listTymu_SelectionChanged"/>
+
+    </Grid>
+</Window>

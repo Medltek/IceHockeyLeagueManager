@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF.Zebricky"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Zebricky" Height="450" Width="428.641" >
+    <Grid Margin="0,0,0.4,0">
+        <DataGrid x:Name="dataGridZebr"  HorizontalAlignment="Left" Margin="0,0,-2,10" Width="424" AutoGenerateColumns="False" CanUserAddRows="False" Grid.RowSpan="2" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="   Nazev   " Binding="{Binding tym.tym_nazev}" IsReadOnly="True"/>
+                <DataGridTextColumn Header=" Body " Binding="{Binding body}" IsReadOnly="True"/>
+                <DataGridTextColumn Header=" Skóre " Binding="{Binding skore}" IsReadOnly="True"/>
+                <DataGridTextColumn Header=" Zápasy " Binding="{Binding zapasy}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

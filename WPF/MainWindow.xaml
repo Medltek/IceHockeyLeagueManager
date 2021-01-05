@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Margin="2,0,0,0" Width="400">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="261*"/>
+            <ColumnDefinition Width="139*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Hokejová Liga" HorizontalAlignment="Center" Margin="147,28,137,389.4" VerticalAlignment="Center" Width="116" Height="53" FontSize="16" Grid.ColumnSpan="2"/>
+        <Button Content="Zebricek" HorizontalAlignment="Left" Margin="145,100,0,0" VerticalAlignment="Top" Width="116" Grid.ColumnSpan="2" Height="40" Click="zebricek_Click"/>
+        <Button Content="Hraci" HorizontalAlignment="Left" Margin="145,252,0,0" VerticalAlignment="Top" Width="116" Grid.ColumnSpan="2" Height="40" Click="hraci_Click"/>
+        <Button Content="Zapasy" HorizontalAlignment="Left" Margin="145,178,0,0" VerticalAlignment="Top" Width="116" Grid.ColumnSpan="2" Height="40" Click="zapasy_Click"/>
+        <Button Content="Sponzori" HorizontalAlignment="Left" Margin="147,329,0,0" VerticalAlignment="Top" Width="116" Grid.ColumnSpan="2" Height="40" Click="sponzori_Click"/>
+        <Button x:Name="kluby" Content="Kluby" HorizontalAlignment="Left" Margin="147,400,0,0" VerticalAlignment="Top" Width="116" Grid.ColumnSpan="2" Height="40" Click="kluby_Click"/>
+        <Button x:Name="tymy" Content="Týmy" HorizontalAlignment="Left" Margin="147,471,0,0" VerticalAlignment="Top" Width="116" Grid.ColumnSpan="2" Height="40" Click="tymy_Click"/>
+
+    </Grid>
+</Window>

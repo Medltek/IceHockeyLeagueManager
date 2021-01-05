@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF.Sponzori"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Sponzori" Height="600" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrids" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="784" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="   Název   " Binding="{Binding sponzor_nazev}" IsReadOnly="True"/>
+                <DataGridTextColumn Header=" Částka " Binding="{Binding castka}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="buttVlozit" Content="Vložit Sponzora" HorizontalAlignment="Left" Margin="235,420,0,0" VerticalAlignment="Top" Width="100" Height="20" Click="Button_Click"/>
+        <Label Content="Název: " HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.732,-0.531"/>
+        <Label Content="Částka: " HorizontalAlignment="Left" Margin="8,358,0,0" VerticalAlignment="Top"/>
+        <Label Content="Klub: " HorizontalAlignment="Left" Margin="10,414,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.411,2.462"/>
+        <TextBox x:Name="nazev" HorizontalAlignment="Left" Height="23" Margin="93,299,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="castka" HorizontalAlignment="Left" Height="23" Margin="93,358,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="listKlub" HorizontalAlignment="Left" Height="146" Margin="93,414,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="listKlub_SelectionChanged"/>
+        <Button x:Name="buttSmazat" Content="Smazat sponzora" HorizontalAlignment="Left" Margin="519,460,0,0" VerticalAlignment="Top" Width="120" Height="23" Click="Button_Click_1"/>
+        <ListBox x:Name="listSponzoru" HorizontalAlignment="Left" Height="146" Margin="519,294,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="listSponzoru_SelectionChanged"/>
+    </Grid>
+</Window>
