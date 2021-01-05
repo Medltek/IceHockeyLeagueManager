@@ -1,5 +1,6 @@
 School project .WPF APP using Oracle dbs.
-C#, SQL, PL/SQL, T/SQL
+
+Tool for managing an ice hockey league, matches, players, statistics and so on...
 
 SQL scripts, documentation provided
 
